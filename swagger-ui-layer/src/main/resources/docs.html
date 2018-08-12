@@ -57,7 +57,78 @@
         </div>
         <div class="layui-body site-content" id="path-body"
              style="border-left: solid 2px #1AA094;">
-           默认的首页太丑了点吧
+            <div class="layui-body site-content" id="path-body" style="border-left: solid 2px #1AA094;">
+                <div class="layui-tab layui-tab-brief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this"><span class="method post" m_operationid="getOneAllInfoUsingPOST" path="/search/q" method="post">搜索核心接口</span>
+                    </ul>
+                    <div class="layui-tab-content" style="min-height: 150px; padding: 5px 0px 0px; height: 803px;">
+                        <div class="layui-tab-item layui-show">
+                            <table class="layui-table">
+                                <colgroup>
+                                    <col width="150">
+                                    <col width="150">
+                                    <col width="150">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>项目名称</th>
+                                    <td colspan="3">search-api</td>
+                                </tr>
+                                <tr>
+                                    <th>描述</th>
+                                    <td colspan="3">描述哦</td>
+                                </tr>
+                                <tr>
+                                    <th>使用</th>
+                                    <td colspan="3">输入查询内容 返回查询公司查询结果</td>
+                                </tr>
+                                <tr>
+                                    <th>胡文俭</th>
+                                    <td>application/json</td>
+                                    <th>Produces</th>
+                                    <td>*/*</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <fieldset class="layui-elem-field layui-field-title">
+                                <legend>Parameters</legend>
+                            </fieldset>
+                            <table class="layui-table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Parameter Type</th>
+                                    <th>Data Type</th>
+                                    <th>Default</th>
+                                    <th>Required</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr>
+                                    <td>q</td>
+                                    <td>查询内容</td>
+                                    <td>query</td>
+                                    <td>string</td>
+                                    <td>新华信用</td>
+
+                                    <td><i class="layui-icon"></i></td>
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                            <fieldset class="layui-elem-field layui-field-title">
+                                <legend>Responses</legend>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         {{if info.license}}
